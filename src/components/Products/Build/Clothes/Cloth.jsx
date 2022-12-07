@@ -4,10 +4,11 @@ import css from "../Products/clothes-style.module.scss";
 const Cloth = () => {
   return (
     <div className={css.cloth_section}>
-      <p>1</p>
+      <p className={css.number}>1</p>
       <img
         src="https://github.com/AmgalanAmga/mepo-af-project/blob/main/frontend/src/assets/images/mepo-image-men2.jpg?raw=true"
         alt=""
+        className={css.cloth_section}
       />
       <p>Winter Jacket</p>
       <p>Undercover</p>
