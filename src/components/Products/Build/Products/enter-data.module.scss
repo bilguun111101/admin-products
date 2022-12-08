@@ -1,0 +1,122 @@
+.enter_data_section {
+  width: 500px;
+  height: 740px;
+  padding: 30px;
+  background: #fff;
+
+  &__container {
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+
+    .close_btn {
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      border: none;
+      cursor: pointer;
+      background: none;
+      transition: 0.1s ease all;
+
+      &:active {
+        opacity: 0.8;
+      }
+
+      img {
+        width: 12px;
+        height: auto;
+      }
+    }
+
+    .title_section {
+      gap: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #000000;
+      }
+
+      p {
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-transform: capitalize;
+
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    .choose_language_section {
+      display: flex;
+      button {
+        width: 150px;
+        border: none;
+        font-size: 16px;
+        background: none;
+        display: flex;
+        transition: 0.1s ease all;
+        justify-content: flex-start;
+        border-bottom: 2px solid #000;
+      }
+    }
+
+    .enter_information_section {
+      gap: 10px;
+      width: 300px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      input {
+        font-size: 20px;
+        padding: 10px;
+        border: 1px solid silver;
+        outline: none;
+      }
+      input::placeholder {
+        color: rgba(0, 7, 35, 0.17);
+      }
+
+      .description {
+        font-size: 18px;
+        height: 200px;
+        text-align: start;
+      }
+      .description::placeholder {
+        padding: 10px 0;
+        position: absolute;
+        top: 0%;
+      }
+
+      .artist_section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 0% 10px;
+        position: relative;
+        border: 1px solid silver;
+
+        p {
+          font-size: 20px;
+          color: rgba(0, 7, 35, 0.17);
+        }
+        img {
+          width: 50px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
