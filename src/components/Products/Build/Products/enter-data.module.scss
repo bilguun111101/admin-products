@@ -78,8 +78,8 @@
       display: flex;
       flex-direction: column;
       input {
-        font-size: 20px;
-        padding: 10px;
+        font-size: 16px;
+        padding: 5px;
         border: 1px solid silver;
         outline: none;
       }
@@ -88,7 +88,7 @@
       }
 
       .description {
-        font-size: 18px;
+        font-size: 15px;
         height: 200px;
         text-align: start;
       }
@@ -104,18 +104,85 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
-        padding: 0% 10px;
+        padding: 0% 2px;
         position: relative;
         border: 1px solid silver;
+        background: none;
 
         p {
-          font-size: 20px;
+          font-size: 16px;
           color: rgba(0, 7, 35, 0.17);
         }
-        img {
-          width: 50px;
+        .iconBtn {
+          width: 30px;
           height: auto;
+          transition: .2s ease all;
         }
+
+        .activeBtn {
+          transform: rotate(180deg);
+        }
+        .activeSelectText {
+          color: #000;
+        }
+      }
+
+      .default_gender {
+        gap: 5px;
+        width: 100%;
+        display: flex;
+
+        .gender_and_default {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          padding: 0 2px;
+          position: relative;
+          border: 1px solid silver;
+          background: none;
+
+          p {
+            font-size: 16px;
+            color: rgba(0, 7, 35, 0.17);
+          }
+          .iconBtn {
+            width: 30px;
+            height: auto;
+            transition: .2s ease all;
+          }
+  
+          .activeBtn {
+            transform: rotate(180deg);
+          }
+          .activeSelectText {
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .switch_btns {
+      gap: 5px;
+      width: 300px;
+      display: flex;
+
+      button {
+        width: 50%;
+        border: none;
+        display: flex;
+        padding: 10px 0;
+        cursor: pointer;
+        justify-content: center;
+      }
+
+      button:nth-child(1) {
+        background: #F2F2F9;
+      }
+      button:nth-child(2) {
+        background: #000;
+        color: #FFF;
       }
     }
   }

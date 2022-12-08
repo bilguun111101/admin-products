@@ -11,5 +11,8 @@
   display: flex;
   justify-content: center;
   padding-top: 200px;
-  transition: 0.2s ease all;
+  transition: .2s ease all;
+  @media (max-width: 1500px) {
+    padding-top: 0%;
+  }
 }

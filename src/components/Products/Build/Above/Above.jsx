@@ -1,8 +1,9 @@
 import React from "react";
-// import css from "../Products/products-style.module.scss";
+import { useActive } from "../Context/Active";
 import css from "../Products/above-style.module.scss";
 
 export const Above = () => {
+  const { setActiveBackground } = useActive();
   return (
     <div className={css.above_section}>
       <div className={css.add_section}>
@@ -16,7 +17,7 @@ export const Above = () => {
             />
           </div>
         </div>
-        <button className={css.add_section__add_products}>
+        <button className={css.add_section__add_products} onClick={() => setActiveBackground(true)}>
           <p className={css.plus}>+</p>
           <p>Add Product</p>
         </button>
