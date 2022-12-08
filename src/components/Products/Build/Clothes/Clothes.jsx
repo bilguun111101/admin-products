@@ -16,6 +16,7 @@ const titles = [
 ];
 
 export const Clothes = () => {
+  const datas = new Array(20).fill(1);
   return (
     <div className={css.clothes_section}>
       <div className={css.clothes_section__titles}>
@@ -25,7 +26,9 @@ export const Clothes = () => {
           </h4>
         ))}
       </div>
-      <Cloth />
+      {datas?.map((el, idx) => (
+        <Cloth key={idx} data={el} number={idx} />
+      ))}
     </div>
   );
 };

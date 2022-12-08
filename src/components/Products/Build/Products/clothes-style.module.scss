@@ -16,7 +16,6 @@
     padding: 30px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     h4 {
       font-family: sans-serif;
@@ -34,7 +33,6 @@
     justify-content: space-between;
 
     p {
-      width: 10%;
       @include display();
       text-align: center;
     }
@@ -42,9 +40,33 @@
       width: 10%;
       height: auto;
     }
-    .cloth_section {
-      width: 80px;
-      height: auto;
+
+    &__primal {
+      width: 10%;
+      @include display();
+      .cloth_section {
+        width: 80px;
+        height: auto;
+      }
+
+      &__list {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .collection_btn {
+        background: #f2f2f9;
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        border: none;
+        /* identical to box height */
+        text-transform: capitalize;
+        color: #000000;
+      }
     }
   }
 }
