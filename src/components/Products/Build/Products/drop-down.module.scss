@@ -1,0 +1,27 @@
+.dropdown {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 100%;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    overflow: hidden;
+    background: #FFF;
+    flex-direction: column;
+    transition: .2s ease all;
+
+    &__option {
+        width: 100%;
+        padding: 5px 0;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        border-bottom: 0.08px solid rgba(0, 7, 35, 0.17);
+    }
+}
+
+.active {
+    height: 100px;
+    border: 1px solid rgba(0, 7, 35, 0.17);
+}

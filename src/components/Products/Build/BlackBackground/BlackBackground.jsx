@@ -5,14 +5,14 @@ import { useActive } from "../Context/Active";
 import { EnterData } from "../EnterData/EnterData";
 
 export const BlackBackground = () => {
-  const { enterData, setEnterData } = useActive();
+  const { enterData } = useActive();
   return (
     <motion.div
       initial={{ opacity: 0, x: -30 }}
       animate={{ opacity: 1, x: 0 }}
       className={css.black_background_section}
     >
-      <EnterData />
+      { !enterData ? <EnterData /> : <></> }
     </motion.div>
   );
 };

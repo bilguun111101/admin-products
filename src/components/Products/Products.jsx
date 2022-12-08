@@ -8,7 +8,7 @@ const Products = () => {
   const { activeBackground, setActiveBackground } = useActive();
   return (
     <>
-      {!activeBackground ? <BlackBackground /> : <></>}
+      {activeBackground ? <BlackBackground /> : <></>}
       <motion.div
         className={css.products_section}
         initial={{
